@@ -3,22 +3,46 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to Astro</h1>
+<Layout title="How to read Thai">
+	<main class="container">
+		<h1>Getting started with how to read Thai</h1>
 		<p class="instructions">
 			Check out the <code>src/pages</code> directory to get started.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
 		</p>
 		<ul role="list" class="link-card-grid">
-			<Card href="https://docs.astro.build/" title="Documentation"
+			<Card href="https: //docs.astro.build/" title="Documentation"
 				body="Learn how Astro works and explore the official API docs." />
-			<Card href="https://astro.build/integrations/" title="Integrations"
-				body="Supercharge your project with new frameworks and libraries." />
-			<Card href="https://astro.build/themes/" title="Themes"
-				body="Explore a galaxy of community-built starter themes." />
-			<Card href="https://astro.build/chat/" title="Chat"
-				body="Come say hi to our amazing Discord community. ❤️" />
+
 		</ul>
+		<!-- Button to trigger the modal -->
+		<button class="contrast" data-target="modal-example" onclick="toggleModal(event)">
+			Launch demo modal
+		</button>
+
+		<!-- Modal -->
+		<dialog id="modal-example">
+			<article>
+				<a href="#close" aria-label="Close" class="close" data-target="modal-example"
+					onclick="toggleModal(event)">
+				</a>
+				<h3>Confirm your action!</h3>
+				<p>
+					Cras sit amet maximus risus.
+					Pellentesque sodales odio sit amet augue finibus pellentesque.
+					Nullam finibus risus non semper euismod.
+				</p>
+				<footer>
+					<a href="#cancel" role="button" class="secondary" data-target="modal-example"
+						onclick="toggleModal(event)">
+						Cancel
+					</a>
+					<a href="#confirm" role="button" data-target="modal-example" onclick="toggleModal(event)">
+						Confirm
+					</a>
+				</footer>
+			</article>
+		</dialog>
+
 	</main>
 </Layout>
