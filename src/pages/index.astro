@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
-import heroImage from '/images/header.jpg';
+import heroImage from '/images/header.webp';
 import appStore from '/images/appstore.svg';
 import playStore from '/images/playstore.png';
 
@@ -49,14 +49,15 @@ import playStore from '/images/playstore.png';
 				There is a comprehensive set of lessons that will guide you to more and more difficult words, all the
 				way to the end of a book. The lessons are suitable for all ages.</p>
 
-			<a href="https://apps.apple.com/us/app/easy-thai-read/id1380147544?itsct=apps_box_badge&amp;itscg=30200"
-				style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img
-					src={appStore} alt="Download on the App Store"
-					style="border-radius: 13px; width: 250px; height: 83px;"></a>
-			<a style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px;"
-				href='https://play.google.com/store/apps/details?id=com.anthood.bangkok2&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
-					alt='Get it on Google Play' src={playStore} /></a>
-
+			<section id="download">
+				<a href="https://apps.apple.com/us/app/easy-thai-read/id1380147544?itsct=apps_box_badge&amp;itscg=30200"
+					style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img
+						src={appStore} alt="Download on the App Store"
+						style="border-radius: 13px; width: 250px; height: 83px;"></a>
+				<a style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px;"
+					href='https://play.google.com/store/apps/details?id=com.anthood.bangkok2&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
+						alt='Get it on Google Play' src={playStore} width="250" height="74" /></a>
+			</section>
 			<h3>Thai Dictionary</h3>
 
 			<p><a href="http://www.thai-language.com/dict/">thai-language.com</a> is a simple, fast and easy
