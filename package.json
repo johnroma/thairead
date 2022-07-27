@@ -12,6 +12,7 @@
     "astro": "^1.0.0-rc.1"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^0.3.0",
     "@picocss/pico": "^1.5.3",
     "sass": "^1.54.0"
   }
