@@ -1,133 +1,71 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+
+import heroImage from '/images/header.jpg';
+import appStore from '/images/appstore.svg';
+import playStore from '/images/playstore.png';
+
 ---
 
 <Layout title="How to read Thai">
-	<header class="container">
-		<figure>
-			<img width="2000" height="1000" src="https://source.unsplash.com/a562ZEFKW8I/2000x1000"
-				alt="Minimal landscape">
-			<figcaption>Image from <a href="https://unsplash.com">unsplash.com</a></figcaption>
-		</figure>
+	<header class="container" id="welcome">
+		<img width="2000" height="1000" src={heroImage} />
 		<hgroup>
-			<h1>Getting started with Thai reading</h1>
-			<p>A basic custom template for Pico using only CSS custom properties (variables) xxxx.</p>
+			<h1>Improve your Thai reading skills</h1>
+			<p>Thai Reading can be confusing, especially for new learners, here is some advice on how to best practice
+				your reading, and take it to the next level.</p>
 		</hgroup>
-
 	</header>
 	<main class="container">
 		<section>
-			<h2>Getting started with Thai reading</h2>
-			<p>Aliquam lobortis vitae nibh nec rhoncus. Morbi mattis neque eget efficitur feugiat. Vivamus porta nunc a
-				erat mattis, mattis feugiat turpis pretium. Quisque sed tristique felis.</p>
-
-			<!-- Blockquote-->
-			<blockquote>
-				"Maecenas vehicula metus tellus, vitae congue turpis hendrerit non. Nam at dui sit amet ipsum cursus
-				ornare."
-				<footer>
-					<cite>- Phasellus eget lacinia</cite>
-				</footer>
-			</blockquote>
-
-			<!-- Lists-->
-			<h3>Lists</h3>
+			<h3> The Thai alphabet uses a different set of rules
+				than English does</h3>
 			<ul>
-				<li>Aliquam lobortis lacus eu libero ornare facilisis.</li>
-				<li>Nam et magna at libero scelerisque egestas.</li>
-				<li>Suspendisse id nisl ut leo finibus vehicula quis eu ex.</li>
-				<li>Proin ultricies turpis et volutpat vehicula.</li>
+				<li>Capital letters are not used in the Thai language</li>
+				<li>The alphabet has 44 consonants, some of which can be combined with other letters to form more
+					complex
+					sounds</li>
+				<li>The vowels have accents over them to show how they should be pronounced.</li>
+				<li>In Thai there are no spaces between words so it looks like one long string of letters when typed
+					out.
+				</li>
 			</ul>
 
-			<!-- Inline text elements-->
-			<h3>Inline text elements</h3>
-			<figure>
-				<table>
-					<tbody>
-						<tr>
-							<td><a href="#" onclick="event.preventDefault()">Link</a></td>
-							<td><strong>Bold</strong></td>
-							<td><em>Italic</em></td>
-						</tr>
-						<tr>
-							<td><u>Underline</u></td>
-							<td><del>Deleted</del></td>
-							<td><ins>Inserted</ins></td>
-						</tr>
-						<tr>
-							<td><s>Strikethrough</s></td>
-							<td><small>Small </small></td>
-							<td><abbr title="Abbreviation" data-tooltip="Abbreviation">Abbr.</abbr></td>
-						</tr>
-						<tr>
-							<td>Text <sub>Sub</sub></td>
-							<td>Text <sup>Sup</sup></td>
-							<td><kbd>Kbd</kbd></td>
-						</tr>
-						<tr>
-							<td><mark>Highlighted</mark></td>
-							<td>&nbsp;</td>
-							<td>&nbsp;</td>
-						</tr>
-					</tbody>
-				</table>
-			</figure>
+			<p>Thai is a tonal language—that means that the pitch of your voice can change the meaning of a word in
+				Thai.
+				For example, อยาก (yàak) means “want to” but ไม่อยาก (mái yàak) means “do not want to.”
 
-			<!-- Headings-->
-			<h3>Heading 3</h3>
-			<p>Integer bibendum malesuada libero vel eleifend. Fusce iaculis turpis ipsum, at efficitur sem scelerisque
-				vel. Aliquam auctor diam ut purus cursus fringilla. Class aptent taciti sociosqu ad litora torquent per
-				conubia nostra, per inceptos himenaeos.</p>
-			<h4>Heading 4</h4>
-			<p>Cras fermentum velit vitae auctor aliquet. Nunc non congue urna, at blandit nibh. Donec ac fermentum
-				felis. Vivamus tincidunt arcu ut lacus hendrerit, eget mattis dui finibus.</p>
-			<h5>Heading 5</h5>
-			<p>Donec nec egestas nulla. Sed varius placerat felis eu suscipit. Mauris maximus ante in consequat luctus.
-				Morbi euismod sagittis efficitur. Aenean non eros orci. Vivamus ut diam sem.</p>
-			<h6>Heading 6</h6>
-			<p>Ut sed quam non mauris placerat consequat vitae id risus. Vestibulum tincidunt nulla ut tortor posuere,
-				vitae malesuada tortor molestie. Sed nec interdum dolor. Vestibulum id auctor nisi, a efficitur sem.
-				Aliquam sollicitudin efficitur turpis, sollicitudin hendrerit ligula semper id. Nunc risus felis,
-				egestas eu tristique eget, convallis in velit.</p>
+				This makes reading Thai very difficult for people who aren't used to seeing this style of writing!</p>
+			<p>To make
+				it
+				easier, we gathered some links and tools that can help you learn to read Thai in no time.</p>
+			<h3>There is actually an app based on the Manee books</h3>
+			<p>Easy Thai Read is an app for all ages. It is in fact a digital version of the Manee study books for
+				childen.
+				It has voice recordings from a native Thai speaker with english translations and its phonetics spelled
+				out.
+				At first some Thai words can be quite tricky to read, but once you get used to hearing them out at
+				reading them at the same time it gets easier over time.
+				There is a comprehensive set of lessons that will guide you to more and more difficult words, all the
+				way to the end of a book. The lessons are suitable for all ages.</p>
 
+			<a href="https://apps.apple.com/us/app/easy-thai-read/id1380147544?itsct=apps_box_badge&amp;itscg=30200"
+				style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img
+					src={appStore} alt="Download on the App Store"
+					style="border-radius: 13px; width: 250px; height: 83px;"></a>
+			<a style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px;"
+				href='https://play.google.com/store/apps/details?id=com.anthood.bangkok2&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
+					alt='Get it on Google Play' src={playStore} /></a>
 
+			<h3>Thai Dictionary</h3>
 
+			<p><a href="http://www.thai-language.com/dict/">thai-language.com</a> is a simple, fast and easy
+				dictionary
+				to browse through all Thai words. You can also search by reverse
+				Phonemic Transcription</p>
+			<p>It has a dictionary of over 78940 Thai words and phrases with English definitions—and 21488 audio
+				clips.
+			</p>
 		</section>
-
-		<ul role="list" class="link-card-grid">
-			<Card href="https: //docs.astro.build/" title="Documentation"
-				body="Learn how Astro works and explore the official API docs." />
-
-		</ul>
-		<!-- Button to trigger the modal -->
-		<button class="contrast" data-target="modal-example" onclick="toggleModal(event)">
-			Launch demo modal
-		</button>
-
-		<!-- Modal -->
-		<dialog id="modal-example">
-			<article>
-				<a href="#close" aria-label="Close" class="close" data-target="modal-example"
-					onclick="toggleModal(event)">
-				</a>
-				<h3>Confirm your action!</h3>
-				<p>
-					Cras sit amet maximus risus.
-					Pellentesque sodales odio sit amet augue finibus pellentesque.
-					Nullam finibus risus non semper euismod.
-				</p>
-				<footer>
-					<a href="#cancel" role="button" class="secondary" data-target="modal-example"
-						onclick="toggleModal(event)">
-						Cancel
-					</a>
-					<a href="#confirm" role="button" data-target="modal-example" onclick="toggleModal(event)">
-						Confirm
-					</a>
-				</footer>
-			</article>
-		</dialog>
-
 	</main>
 </Layout>

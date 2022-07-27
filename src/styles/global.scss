@@ -1,7 +1,22 @@
 [data-theme="light"],
 :root:not([data-theme="dark"]) {
-  --primary: #fb8c00;
-  --primary-hover: #f57c00;
-  --primary-focus: rgba(251, 140, 0, 0.125);
+  --background-color: #f0e6cb;
+
+  --primary: #e53935;
+  --primary-hover: #d32f2f;
+  --primary-focus: rgba(229, 57, 53, 0.125);
   --primary-inverse: #fff;
+  --color: hsl(205deg, 30%, 32%);
+  --h1-color: #042c49;
+  --h2-color: #0f4267;
+  --h3-color: #215a83;
+  --h4-color: #3a7098;
+  --h5-color: #5986a6;
+  --h6-color: #7f9aad;
+}
+
+#welcome {
+  img {
+    margin-bottom: calc(var(--spacing));
+  }
 }
