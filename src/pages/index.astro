@@ -3,13 +3,13 @@ import Layout from "../layouts/Layout.astro";
 
 import heroImage from '/images/header.webp';
 import appStore from '/images/appstore.svg';
-import playStore from '/images/playstore.png';
+import playStore from '/images/playstore.webp';
 
 ---
 
 <Layout title="How to read Thai">
 	<header class="container" id="welcome">
-		<img width="2000" height="1000" src={heroImage} />
+		<img width="2000" height="1000" src={heroImage} alt="reading with passion" />
 		<hgroup>
 			<h1>Improve your Thai reading skills</h1>
 			<p>Thai Reading can be confusing, especially for new learners, here is some advice on how to best practice
@@ -18,8 +18,8 @@ import playStore from '/images/playstore.png';
 	</header>
 	<main class="container">
 		<section>
-			<h3> The Thai alphabet uses a different set of rules
-				than English does</h3>
+			<h2> The Thai alphabet uses a different set of rules
+				than English does</h2>
 			<ul>
 				<li>Capital letters are not used in the Thai language</li>
 				<li>The alphabet has 44 consonants, some of which can be combined with other letters to form more
@@ -39,7 +39,7 @@ import playStore from '/images/playstore.png';
 			<p>To make
 				it
 				easier, we gathered some links and tools that can help you learn to read Thai in no time.</p>
-			<h3>There is actually an app based on the Manee books</h3>
+			<h2>There is actually an app based on the Manee books</h2>
 			<p>Easy Thai Read is an app for all ages. It is in fact a digital version of the Manee study books for
 				childen.
 				It has voice recordings from a native Thai speaker with english translations and its phonetics spelled
@@ -55,10 +55,10 @@ import playStore from '/images/playstore.png';
 						src={appStore} alt="Download on the App Store"
 						style="border-radius: 13px; width: 250px; height: 83px;"></a>
 				<a style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px;"
-					href='https://play.google.com/store/apps/details?id=com.anthood.bangkok2&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img
-						alt='Get it on Google Play' src={playStore} width="250" height="74" /></a>
+					href='https://play.google.com/store/apps/details?id=com.anthood.bangkok2&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+					<img alt='Get it on Google Play' src={playStore} width="250px" height="74px" /></a>
 			</section>
-			<h3>Thai Dictionary</h3>
+			<h2>Thai Dictionary</h2>
 
 			<p><a href="http://www.thai-language.com/dict/">thai-language.com</a> is a simple, fast and easy
 				dictionary
